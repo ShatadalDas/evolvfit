@@ -1,0 +1,62 @@
+.container {
+  margin-block: 10vh;
+  background-color: var(--dark-clr);
+  padding: 2rem;
+  border-radius: 1rem;
+  .header {
+    color: var(--big-text-clr);
+    display: flex;
+    gap: 5.5rem;
+    margin-inline-start: 20rem;
+    img {
+      height: 1.25rem;
+    }
+    .workout-img {
+      transform: rotate(-40deg);
+    }
+    figure {
+      display: flex;
+      gap: 0.5rem;
+    }
+    figcaption {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    .header {
+      flex-direction: column;
+      margin-block-start: 13rem;
+      margin-inline-start: 0;
+      gap: 7rem;
+    }
+    .userrow-container {
+      width: 60vw;
+      overflow-x: scroll;
+      display: flex;
+      flex-direction: row;
+      margin: 1rem;
+    }
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+  .container {
+    .header {
+      figure {
+        display: flex;
+        justify-content: center;
+        figcaption {
+          display: block;
+        }
+      }
+    }
+  }
+}

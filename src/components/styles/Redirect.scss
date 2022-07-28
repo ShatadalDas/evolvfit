@@ -1,0 +1,26 @@
+.btn {
+    height: 3.75rem;
+    width: 1.875rem;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--dark-clr);
+      border-radius: 0.5rem;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+    }
+
+    span {
+      background-color: var(--alert-clr);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      color: white;
+      cursor: not-allowed;
+    }
+  }
